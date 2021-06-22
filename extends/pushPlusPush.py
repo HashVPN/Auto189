@@ -5,7 +5,7 @@ def push_text(msg: str, token: str) -> str:
     data = {
         "template": "markdown",
         "token": token,
-        "title": "cloud189app-action",
+        "title": "天翼云盘自动化结果通知",
         "content": msg.replace(" ", "&nbsp;").replace("\n", "  \n")
     }
     response = requests.post("http://www.pushplus.plus/send", data=data)
